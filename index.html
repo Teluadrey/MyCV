@@ -4,21 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yerdaulet's CV</title>
+  <!-- Using a more legible futuristic font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    /* Reset and base styling */
+    /* Reset & Base Styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Exo 2', sans-serif;
       line-height: 1.6;
       background: #f4f4f4;
       color: #333;
     }
+    /* Header with gradient background */
     header {
-      background: #333;
+      background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
       color: #fff;
       padding: 10px 0;
       position: fixed;
@@ -28,32 +31,44 @@
     }
     /* Spacer to offset the fixed header */
     .header-spacer {
-      height: 60px; /* Default spacer height matching header height */
+      height: 60px;
     }
+    /* Container */
     .container {
       max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
     }
+    /* Navigation: Using Flexbox for a single-line layout */
     nav ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
       list-style: none;
-      text-align: center;
+      overflow-x: auto;
+      padding: 0 10px;
     }
     nav ul li {
-      display: inline;
-      margin: 0 15px;
+      white-space: nowrap;
     }
     nav ul li a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
+    nav ul li a:hover {
+      color: #00ffff;
+      transform: scale(1.1);
+    }
+    /* Section Styling */
     section {
       margin: 40px 0;
       background: #fff;
       padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
     h1, h2, h3 {
       margin-bottom: 10px;
@@ -70,30 +85,31 @@
     a {
       color: #0077cc;
     }
+    /* Footer */
     footer {
-      background: #333;
+      background: linear-gradient(45deg, #24243e, #302b63, #0f0c29);
       color: #fff;
       text-align: center;
       padding: 15px 0;
     }
-    
     /* Media Queries for Adaptive Design */
     @media (max-width: 1024px) {
       .header-spacer {
-        height: 80px;
+        height: 70px;
       }
-      nav ul li {
-        margin: 0 10px;
+      nav ul {
+        gap: 15px;
       }
     }
-    
     @media (max-width: 768px) {
       .header-spacer {
-        height: 100px;
+        height: 80px;
       }
-      nav ul li {
-        display: block;
-        margin: 10px 0;
+      nav ul {
+        gap: 10px;
+      }
+      nav ul li a {
+        font-size: 0.9em;
       }
       section {
         margin: 20px 0;
@@ -109,13 +125,15 @@
         font-size: 1.4em;
       }
     }
-    
     @media (max-width: 480px) {
       .header-spacer {
-        height: 120px;
+        height: 90px;
       }
-      nav ul li {
-        margin: 5px 0;
+      nav ul {
+        gap: 8px;
+      }
+      nav ul li a {
+        font-size: 0.8em;
       }
       section {
         margin: 15px 0;
@@ -147,9 +165,9 @@
     </nav>
   </header>
   
-  <!-- Spacer element to ensure the fixed header does not overlap the content -->
+  <!-- Spacer to ensure content is not hidden behind the fixed header -->
   <div class="header-spacer"></div>
-
+  
   <div class="container">
     <!-- Overview Section -->
     <section id="overview">
@@ -158,7 +176,7 @@
         I am a highly skilled Machine Learning (ML) and Artificial Intelligence (AI) developer with extensive experience in building, optimizing, and integrating ML models into real-world applications. My expertise spans data science, deep learning, computer vision, and software development—enabling me to tackle complex problems and drive innovation.
       </p>
     </section>
-
+    
     <!-- About Me Section -->
     <section id="about">
       <h2>About Me</h2>
@@ -166,7 +184,7 @@
         Passionate about leveraging ML and AI to create impactful solutions, I have built a strong foundation in ML development and software engineering. My journey in tech is defined by continuous learning, hands-on project experience, and an entrepreneurial drive to build platforms like Blazar that bridge innovation with business strategy.
       </p>
     </section>
-
+    
     <!-- Skills Section -->
     <section id="skills">
       <h2>Technical Skills &amp; Expertise</h2>
@@ -180,7 +198,7 @@
         <li><strong>Imbalanced Data Handling:</strong> Utilizes SMOTE, stratified sampling, and cost-sensitive learning for improved fairness and accuracy.</li>
         <li><strong>Explainability &amp; Interpretability:</strong> Implements SHAP, LIME, and interpretable ML approaches to foster trust in AI models.</li>
       </ul>
-
+      
       <h3>Computer Vision &amp; Deep Learning</h3>
       <ul>
         <li><strong>Convolutional Neural Networks (CNNs):</strong>
@@ -199,7 +217,7 @@
           </ul>
         </li>
       </ul>
-
+      
       <h3>Natural Language Processing (NLP) &amp; LLMs</h3>
       <ul>
         <li><strong>LLM Integration:</strong>
@@ -218,7 +236,7 @@
           </ul>
         </li>
       </ul>
-
+      
       <h3>Software Development &amp; Backend Engineering</h3>
       <ul>
         <li><strong>FastAPI &amp; Web Development:</strong>
@@ -238,21 +256,21 @@
           </ul>
         </li>
       </ul>
-
+      
       <h3>Data Science &amp; Analytics</h3>
       <ul>
         <li><strong>Data Visualization:</strong> Proficient in Matplotlib, Seaborn, and Plotly for insightful data representations.</li>
         <li><strong>Data Cleaning &amp; Processing:</strong> Expert in handling and preprocessing messy datasets with Pandas, NumPy, and Scikit-Learn.</li>
         <li><strong>Exploratory Data Analysis (EDA):</strong> Uses statistical methods, correlation analysis, and feature engineering to extract actionable insights.</li>
       </ul>
-
+      
       <h3>Additional Skills</h3>
       <ul>
         <li><strong>Git &amp; GitHub:</strong> Proficient in version control and collaborative coding.</li>
         <li><strong>Cloud Computing &amp; Deployment:</strong> Experienced with Google Colab, Fly.io, and Netlify.</li>
       </ul>
     </section>
-
+    
     <!-- Projects & Competitions Section -->
     <section id="projects">
       <h2>Projects &amp; Competitions</h2>
@@ -280,7 +298,7 @@
         </li>
       </ul>
     </section>
-
+    
     <!-- Future Learning Goals Section -->
     <section id="goals">
       <h2>Future Learning Goals</h2>
@@ -290,14 +308,14 @@
         <li><strong>Further Model Deployment &amp; MLOps:</strong> Streamline ML pipelines with CI/CD and improve model monitoring for large-scale AI systems.</li>
       </ul>
     </section>
-
+    
     <!-- Contact Section -->
     <section id="contact">
       <h2>Contact</h2>
       <p>If you’d like to get in touch, please email me at: <a href="mailto:erdakosh07@gmail.com">erdakosh07@gmail.com</a></p>
     </section>
   </div>
-
+  
   <footer>
     <p>&copy; 2025 Yerdaulet. All Rights Reserved.</p>
   </footer>
