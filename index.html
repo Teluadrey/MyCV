@@ -1,307 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yerdaulet's CV</title>
-    <style>
-        /* Reset and base styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 80px 20px 20px;
-        }
-        nav ul {
-            list-style: none;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            margin: 40px 0;
-            background: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2, h3 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-        ul {
-            margin-left: 20px;
-            list-style: disc;
-        }
-        ul ul {
-            list-style: circle;
-            margin-left: 20px;
-        }
-        a {
-            color: #0077cc;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 15px 0;
-        }
-
-        /* Media Queries for Adaptive Design */
-        @media (max-width: 1024px) {
-            .container {
-                padding: 100px 20px 20px;
-            }
-            nav ul li {
-                margin: 0 10px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            header {
-                padding: 10px;
-            }
-            nav ul li {
-                display: block;
-                margin: 10px 0;
-            }
-            .container {
-                padding: 100px 10px 20px;
-            }
-            section {
-                margin: 20px 0;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            h2 {
-                font-size: 1.6em;
-            }
-            h3 {
-                font-size: 1.4em;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header {
-                padding: 5px;
-            }
-            nav ul li {
-                margin: 5px 0;
-            }
-            .container {
-                padding: 100px 5px 20px;
-            }
-            section {
-                margin: 15px 0;
-                padding: 10px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
-            h2 {
-                font-size: 1.3em;
-            }
-            h3 {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yerdaulet's CV</title>
+  <style>
+    /* Reset and base styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px 20px;
+    }
+    nav ul {
+      list-style: none;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      margin: 40px 0;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    ul {
+      margin-left: 20px;
+      list-style: disc;
+    }
+    ul ul {
+      list-style: circle;
+      margin-left: 20px;
+    }
+    a {
+      color: #0077cc;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+    
+    /* Media Queries for Adaptive Design */
+    @media (max-width: 1024px) {
+      .container {
+        padding: 100px 20px 20px;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        padding: 10px;
+      }
+      nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+      .container {
+        padding: 100px 10px 20px;
+      }
+      section {
+        margin: 20px 0;
+        padding: 15px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.6em;
+      }
+      h3 {
+        font-size: 1.4em;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header {
+        padding: 5px;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+      .container {
+        padding: 100px 5px 20px;
+      }
+      section {
+        margin: 15px 0;
+        padding: 10px;
+      }
+      h1 {
+        font-size: 1.5em;
+      }
+      h2 {
+        font-size: 1.3em;
+      }
+      h3 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#overview">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#goals">Future Goals</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#overview">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#goals">Future Goals</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="container">
+    <!-- Overview Section -->
+    <section id="overview">
+      <h1>Yerdaulet’s CV</h1>
+      <p>
+        I am a highly skilled Machine Learning (ML) and Artificial Intelligence (AI) developer with extensive experience in building, optimizing, and integrating ML models into real-world applications. My expertise spans data science, deep learning, computer vision, and software development—enabling me to tackle complex problems and drive innovation.
+      </p>
+    </section>
 
-    <div class="container">
-        <!-- Overview Section -->
-        <section id="overview">
-            <h1>Yerdaulet’s CV</h1>
-            <p>
-                I am a highly skilled Machine Learning (ML) and Artificial Intelligence (AI) developer with extensive experience in building, optimizing, and integrating ML models into real-world applications. My expertise spans data science, deep learning, computer vision, and software development—enabling me to tackle complex problems and drive innovation.
-            </p>
-        </section>
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        Passionate about leveraging ML and AI to create impactful solutions, I have built a strong foundation in ML development and software engineering. My journey in tech is defined by continuous learning, hands-on project experience, and an entrepreneurial drive to build platforms like Blazar that bridge innovation with business strategy.
+      </p>
+    </section>
 
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Passionate about leveraging ML and AI to create impactful solutions, I have built a strong foundation in ML development, and software engineering. My journey in tech is defined by continuous learning, hands-on project experience, and an entrepreneurial drive to build platforms like Blazar that bridge innovation with business strategy.
-            </p>
-        </section>
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills &amp; Expertise</h2>
+      
+      <h3>Machine Learning &amp; AI Expertise</h3>
+      <ul>
+        <li><strong>Supervised &amp; Unsupervised Learning:</strong> Proficient in classification, regression, clustering, and anomaly detection.</li>
+        <li><strong>Deep Learning:</strong> Experienced in building neural networks for structured/tabular data, computer vision, and predictive modeling.</li>
+        <li><strong>Feature Engineering:</strong> Skilled in data preprocessing, feature selection, dimensionality reduction, and techniques to enhance model performance.</li>
+        <li><strong>Model Optimization:</strong> Expertise in hyperparameter tuning, cross-validation, ensemble learning, and evaluation metrics.</li>
+        <li><strong>Imbalanced Data Handling:</strong> Utilizes SMOTE, stratified sampling, and cost-sensitive learning for improved fairness and accuracy.</li>
+        <li><strong>Explainability &amp; Interpretability:</strong> Implements SHAP, LIME, and interpretable ML approaches to foster trust in AI models.</li>
+      </ul>
 
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Technical Skills &amp; Expertise</h2>
-            
-            <h3>Machine Learning &amp; AI Expertise</h3>
-            <ul>
-                <li><strong>Supervised &amp; Unsupervised Learning:</strong> Proficient in classification, regression, clustering, and anomaly detection.</li>
-                <li><strong>Deep Learning:</strong> Experienced in building neural networks for structured/tabular data, computer vision, and predictive modeling.</li>
-                <li><strong>Feature Engineering:</strong> Skilled in data preprocessing, feature selection, dimensionality reduction, and techniques to enhance model performance.</li>
-                <li><strong>Model Optimization:</strong> Expertise in hyperparameter tuning, cross-validation, ensemble learning, and evaluation metrics.</li>
-                <li><strong>Imbalanced Data Handling:</strong> Utilizes SMOTE, stratified sampling, and cost-sensitive learning for improved fairness and accuracy.</li>
-                <li><strong>Explainability &amp; Interpretability:</strong> Implements SHAP, LIME, and interpretable ML approaches to foster trust in AI models.</li>
-            </ul>
+      <h3>Computer Vision &amp; Deep Learning</h3>
+      <ul>
+        <li><strong>Convolutional Neural Networks (CNNs):</strong>
+          <ul>
+            <li>Knowledge of architectures such as ResNet, EfficientNet, MobileNet, and custom CNN designs for image classification, object detection, and segmentation.</li>
+          </ul>
+        </li>
+        <li><strong>Transfer Learning &amp; Fine-Tuning:</strong>
+          <ul>
+            <li>Adapts pre-trained models using feature extraction and fine-tuning for new tasks.</li>
+          </ul>
+        </li>
+        <li><strong>OpenCV &amp; Image Processing:</strong>
+          <ul>
+            <li>Proficient in OpenCV, PIL, and NumPy for real-time image processing, feature extraction, and edge detection.</li>
+          </ul>
+        </li>
+      </ul>
 
-            <h3>Computer Vision &amp; Deep Learning</h3>
-            <ul>
-                <!-- Removed SafeEyes since it's not currently active -->
-                <li><strong>Convolutional Neural Networks (CNNs):</strong>
-                    <ul>
-                        <li>Knowledge of architectures such as ResNet, EfficientNet, MobileNet, and custom CNN designs for image classification, object detection, and segmentation.</li>
-                    </ul>
-                </li>
-                <li><strong>Transfer Learning &amp; Fine-Tuning:</strong>
-                    <ul>
-                        <li>Adapts pre-trained models using feature extraction and fine-tuning for new tasks.</li>
-                    </ul>
-                </li>
-                <li><strong>OpenCV &amp; Image Processing:</strong>
-                    <ul>
-                        <li>Proficient in OpenCV, PIL, and NumPy for real-time image processing, feature extraction, and edge detection.</li>
-                    </ul>
-                </li>
-            </ul>
+      <h3>Natural Language Processing (NLP) &amp; LLMs</h3>
+      <ul>
+        <li><strong>LLM Integration:</strong>
+          <ul>
+            <li>Integrating OpenAI’s ChatGPT API into the Blazar project to predict startup success and provide AI-driven insights.</li>
+          </ul>
+        </li>
+        <li><strong>Text Processing &amp; Analysis:</strong>
+          <ul>
+            <li>Experience with tokenization, stemming, lemmatization, and sentiment analysis.</li>
+          </ul>
+        </li>
+        <li><strong>Pre-trained Models:</strong>
+          <ul>
+            <li>Familiarity with transformer-based models like BERT, GPT, and T5 for text classification and generation tasks.</li>
+          </ul>
+        </li>
+      </ul>
 
-            <h3>Natural Language Processing (NLP) &amp; LLMs</h3>
-            <ul>
-                <li><strong>LLM Integration:</strong>
-                    <ul>
-                        <li>Integrating OpenAI’s ChatGPT API into the Blazar project to predict startup success and provide AI-driven insights.</li>
-                    </ul>
-                </li>
-                <li><strong>Text Processing &amp; Analysis:</strong>
-                    <ul>
-                        <li>Experience with tokenization, stemming, lemmatization, and sentiment analysis.</li>
-                    </ul>
-                </li>
-                <li><strong>Pre-trained Models:</strong>
-                    <ul>
-                        <li>Familiarity with transformer-based models like BERT, GPT, and T5 for text classification and generation tasks.</li>
-                    </ul>
-                </li>
-            </ul>
+      <h3>Software Development &amp; Backend Engineering</h3>
+      <ul>
+        <li><strong>FastAPI &amp; Web Development:</strong>
+          <ul>
+            <li>Developing the backend of Blazar using FastAPI, integrating ML models and APIs for smooth frontend interaction.</li>
+            <li>Backend hosted on Fly.io for efficient deployment and API accessibility.</li>
+          </ul>
+        </li>
+        <li><strong>Frontend Development:</strong>
+          <ul>
+            <li>Helped in building Blazar’s frontend with HTML &amp; CSS and integrated with the backend using JavaScript fetch calls.</li>
+          </ul>
+        </li>
+        <li><strong>API Development &amp; Deployment:</strong>
+          <ul>
+            <li>Experienced in REST API design, implementation, and integrating ML models with platforms such as Flask, FastAPI, Fly.io, and Netlify.</li>
+          </ul>
+        </li>
+      </ul>
 
-            <h3>Software Development &amp; Backend Engineering</h3>
-            <ul>
-                <li><strong>FastAPI &amp; Web Development:</strong>
-                    <ul>
-                        <li>Developing the backend of Blazar using FastAPI, integrating ML models and APIs for smooth frontend interaction.</li>
-                        <li>Backend hosted on Fly.io for efficient deployment and API accessibility.</li>
-                    </ul>
-                </li>
-                <li><strong>Frontend Development:</strong>
-                    <ul></ul>
-                        <li>Helped in building Blazar’s frontend with HTML &amp; CSS and integrated with the backend using JavaScript fetch calls.</li>
-                    </ul>
-                </li>
-                <li><strong>API Development &amp; Deployment:</strong>
-                    <ul>
-                        <li>Experienced in REST API design, implementation, and integrating ML models with platforms such as Flask, FastAPI, Fly.io, and Netlify.</li>
-                    </ul>
-                </li>
-            </ul>
+      <h3>Data Science &amp; Analytics</h3>
+      <ul>
+        <li><strong>Data Visualization:</strong> Proficient in Matplotlib, Seaborn, and Plotly for insightful data representations.</li>
+        <li><strong>Data Cleaning &amp; Processing:</strong> Expert in handling and preprocessing messy datasets with Pandas, NumPy, and Scikit-Learn.</li>
+        <li><strong>Exploratory Data Analysis (EDA):</strong> Uses statistical methods, correlation analysis, and feature engineering to extract actionable insights.</li>
+      </ul>
 
-            <h3>Data Science &amp; Analytics</h3>
-            <ul>
-                <li><strong>Data Visualization:</strong> Proficient in Matplotlib, Seaborn, and Plotly for insightful data representations.</li>
-                <li><strong>Data Cleaning &amp; Processing:</strong> Expert in handling and preprocessing messy datasets with Pandas, NumPy, and Scikit-Learn.</li>
-                <li><strong>Exploratory Data Analysis (EDA):</strong> Uses statistical methods, correlation analysis, and feature engineering to extract actionable insights.</li>
-            </ul>
+      <h3>Additional Skills</h3>
+      <ul>
+        <li><strong>Git &amp; GitHub:</strong> Proficient in version control and collaborative coding.</li>
+        <li><strong>Cloud Computing &amp; Deployment:</strong> Experienced with Google Colab, Fly.io, and Netlify.</li>
+      </ul>
+    </section>
 
-            <h3>Additional Skills</h3>
-            <ul>
-                <li><strong>Git &amp; GitHub:</strong> Proficient in version control and collaborative coding.</li>
-                <li><strong>Cloud Computing &amp; Deployment:</strong> Experienced with Google Colab, Fly.io, and Netlify.</li>
-            </ul>
-        </section>
+    <!-- Projects & Competitions Section -->
+    <section id="projects">
+      <h2>Projects &amp; Competitions</h2>
+      <h3>Competitive Projects &amp; Hackathons</h3>
+      <ul>
+        <li><strong>Kagge Competition:</strong> Created an ML model for early sepsis label prediction, dealing with an extremely large, imbalanced dataset on limited hardware. Achieved 100% precision, 93% F1 score, 92% precision-recall AUC, and 93% accuracy.</li>
+        <li><strong>Crunch DAO Competition:</strong> Developed a deep learning model for financial forecasting.</li>
+        <li><strong>NASA Space Apps Challenge:</strong> Created an ML model to predict radiation rates, honing my skills in feature engineering and advanced ML techniques.</li>
+      </ul>
+      <h3>Startup &amp; Product Development</h3>
+      <ul>
+        <li><strong>Founder of Blazar:</strong>
+          <ul>
+            <li>Participated in building a platform similar to LinkedIn, tailored for startups and investors.</li>
+            <li>Uses AI to predict startup success and integrates LLMs for generating intelligent insights.</li>
+            <li>Developed the backend using FastAPI and integrated with the frontend for seamless user interaction.</li>
+            <li>Hosted the backend on Fly.io for efficient deployment and API accessibility.</li>
+            <li>Collaborated with a team of developers to build a user-friendly, AI-driven platform for the startup ecosystem.</li>
+          </ul>
+        </li>
+        <li><strong>Technical &amp; Business Strategy:</strong>
+          <ul>
+            <li>Focuses on AI-driven innovation and the development of high-quality, impactful solutions.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
 
-        <!-- Projects & Competitions Section -->
-        <section id="projects">
-            <h2>Projects &amp; Competitions</h2>
-            <h3>Competitive Projects &amp; Hackathons</h3>
-            <ul>
-                <li><strong>Kagge Competition:</strong> Created an ML model for early sepsis label prediction, dealing with an extremely large, imbalanced dataset on limited hardware. Achieved 100% precision, 93% F1 score, 92% precision-recall AUC, and 93% accuracy.</li>
-                <li><strong>Crunch DAO Competition:</strong> Developed a deep learning model for financial forecasting.</li>
-                <li><strong>NASA Space Apps Challenge:</strong> Created an ML model to predict radiation rates, honing my skills in feature engineering and advanced ML techniques.</li>
-            </ul>
-            <h3>Startup &amp; Product Development</h3>
-            <ul>
-                <li><strong>Founder of Blazar:</strong>
-                    <ul>
-                        <li>Participated in building a platform similar to LinkedIn, tailored for startups and investors.</li>
-                        <li>Uses AI to predict startup success and integrates LLMs for generating intelligent insights.</li>
-                        <li>Developed the backend using FastAPI and integrated with the frontend for seamless user interaction.</li>
-                        <li>Hosted the backend on Fly.io for efficient deployment and API accessibility.</li>
-                        <li>Collaborated with a team of developers to build a user-friendly, AI-driven platform for the startup ecosystem.</li>
-                    </ul>
-                </li>
-                <li><strong>Technical &amp; Business Strategy:</strong>
-                    <ul>
-                        <li>Focuses on AI-driven innovation and the development of high-quality, impactful solutions.</li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
+    <!-- Future Learning Goals Section -->
+    <section id="goals">
+      <h2>Future Learning Goals</h2>
+      <ul>
+        <li><strong>Advanced API Development:</strong> Expand expertise in FastAPI, serverless architectures, and scaling ML APIs.</li>
+        <li><strong>Computer Vision &amp; Reinforcement Learning:</strong> Explore advanced vision models and reinforcement learning for practical applications.</li>
+        <li><strong>Further Model Deployment &amp; MLOps:</strong> Streamline ML pipelines with CI/CD and improve model monitoring for large-scale AI systems.</li>
+      </ul>
+    </section>
 
-        <!-- Future Learning Goals Section -->
-        <section id="goals">
-            <h2>Future Learning Goals</h2>
-            <ul>
-                <li><strong>Advanced API Development:</strong> Expand expertise in FastAPI, serverless architectures, and scaling ML APIs.</li>
-                <li><strong>Computer Vision &amp; Reinforcement Learning:</strong> Explore advanced vision models and reinforcement learning for practical applications.</li>
-                <li><strong>Further Model Deployment &amp; MLOps:</strong> Streamline ML pipelines with CI/CD and improve model monitoring for large-scale AI systems.</li>
-            </ul>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you’d like to get in touch, please email me at: <a href="mailto:erdakosh07@gmail.com">erdakosh07@gmail.com</a></p>
+    </section>
+  </div>
 
-        <!-- Contact Section -->
-        <section id="contact"></section>
-            <h2>Contact</h2>
-            <p>If you’d like to get in touch, please email me at: <a href="mailto:erdakosh07@gmail.com">erdakosh07@gmail.com</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Yerdaulet. All Rights Reserved.</p>
-    </footer>
-    
+  <footer>
+    <p>&copy; 2025 Yerdaulet. All Rights Reserved.</p>
+  </footer>
 </body>
-</html></section>
+</html>
