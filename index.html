@@ -26,10 +26,14 @@
       top: 0;
       z-index: 1000;
     }
+    /* Spacer to offset the fixed header */
+    .header-spacer {
+      height: 60px; /* Default spacer height matching header height */
+    }
     .container {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 80px 20px 20px;
+      padding: 20px;
     }
     nav ul {
       list-style: none;
@@ -73,27 +77,23 @@
       padding: 15px 0;
     }
     
-    /* Adjustments for devices up to 1024px wide */
+    /* Media Queries for Adaptive Design */
     @media (max-width: 1024px) {
-      .container {
-        padding: 100px 20px 20px;
+      .header-spacer {
+        height: 80px;
       }
       nav ul li {
         margin: 0 10px;
       }
     }
     
-    /* Mobile adjustments: Remove fixed header */
     @media (max-width: 768px) {
-      header {
-        position: static;
+      .header-spacer {
+        height: 100px;
       }
       nav ul li {
         display: block;
         margin: 10px 0;
-      }
-      .container {
-        padding: 20px 10px 20px;
       }
       section {
         margin: 20px 0;
@@ -111,14 +111,11 @@
     }
     
     @media (max-width: 480px) {
-      header {
-        padding: 5px;
+      .header-spacer {
+        height: 120px;
       }
       nav ul li {
         margin: 5px 0;
-      }
-      .container {
-        padding: 20px 5px 20px;
       }
       section {
         margin: 15px 0;
@@ -149,6 +146,9 @@
       </ul>
     </nav>
   </header>
+  
+  <!-- Spacer element to ensure the fixed header does not overlap the content -->
+  <div class="header-spacer"></div>
 
   <div class="container">
     <!-- Overview Section -->
